@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>RPi Web Server</title>
+</head>
+<body>
+	<h1>RPi Web Server</h1>
+	<p>GPIO 24 is currently <strong>{{statuses}}</strong></p>
+	<form action="/toggle" method="post">
+		<button type="submit">{{"Turn ON" if statuses=="OFF" else "Turn OFF"}}</button>
+	</form>
+</body>
+</html>
