@@ -1,0 +1,27 @@
+https://core-electronics.com.au/guides/raspberry-pi/raspberry-pi-4g-gps-hat/
+
+
+sudo apt-get install minicom
+
+wget https://www.waveshare.com/w/upload/2/29/SIM7600X-4G-HAT-Demo.7z
+
+sudo apt-get install p7zip-full
+
+7z x SIM7600X-4G-HAT-Demo.7z -r -o/home/pi
+
+sudo chmod 777 -R /home/pi/SIM7600X-4G-HAT-Demo
+
+sudo nano /etc/rc.local
+
+This last line when entered will open up a new page (the | rc.local | file) that you can navigate around by using the arrow keys on your keyboard. You will need to add a command inside the | rc.local | file. Find this command directly below so that it is easier to copy and paste. It will need to be located exactly as I have done in the below image. Right click the image and open it in a new tab to see the image in full size if you need it. Completing this task will mean that the Waveshare 4G HAT drivers will start on the boot-up of the Raspberry Pi Single Board Computer.
+
+sh /home/pi/SIM7600X-4G-HAT-Demo/Raspberry/c/sim7600_4G_hat_init
+
+Having done this use your keyboard press Ctrl-X, Y, and then Enter Key to lock in and save these changes.
+
+With that completed open up a new terminal window then type and enter each of the following commands one by one. The first line will direct focus to the | bcm2835 | folder which has the Waveshare 4G HAT driver inside. The second command will give access permissions and initialise the driver. See the results of entering these commands in the image below.
+
+cd /home/pi/SIM7600X-4G-HAT-Demo/Raspberry/c/bcm2835
+
+chmod +x configure && ./configure && sudo make && sudo make install
+
