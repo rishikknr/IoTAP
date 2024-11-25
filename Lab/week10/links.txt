@@ -1,0 +1,21 @@
+https://core-electronics.com.au/guides/raspberry-pi/raspberry-pi-4g-gps-hat/
+
+https://www.youtube.com/watch?v=ABnwz-IYzqA&t=585s&ab_channel=CoreElectronics
+
+0:00 Intro
+0:25 4G HAT Overview
+1:01 Video Overview 
+1:26 What You Need
+2:44 Assembly of Hardware
+5:33 Software Set Up 
+9:45 Ring a Phone with a Raspberry Pi!
+10:54 Success 1!
+11:15 GPS Script
+11:56 Success 2!
+12:19 Human Readable GPS Script
+12:50 Success 3!
+13:19 GPS Data Sent as Text Script
+14:26 Success 4!
+15:00 GPIO Control Via SMS Script 
+17:01 Success 5! 
+17:40 Outro
